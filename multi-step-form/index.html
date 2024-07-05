@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./script.js"></script>
+    <title>Multi-Step Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="stepCont">
+        <div class="steps">
+          <p id="numbers" class="stepCheck selStep">1</p>
+          <div class="detail">
+            <h6>STEP 1</h6>
+            <h5>YOUR INFO</h5>
+          </div>
+        </div>
+
+        <div class="steps">
+          <p id="numbers" class="stepCheck">2</p>
+          <div class="detail">
+            <h6>STEP 2</h6>
+            <h5>SELECT PLANS</h5>
+          </div>
+        </div>
+
+        <div class="steps">
+          <p id="numbers" class="stepCheck">3</p>
+          <div class="detail">
+            <h6>STEP 3</h6>
+            <h5>ADD-ONS</h5>
+          </div>
+        </div>
+
+        <div class="steps">
+          <p id="numbers" class="stepCheck">4</p>
+          <div class="detail">
+            <h6>STEP 4</h6>
+            <h5>SUMMARY</h5>
+          </div>
+        </div>
+      </div>
+      <div class="infoCont">
+        <div class="info1">
+          <h2 class="infoTitle">Profile info</h2>
+          <p class="infoDesc">
+            Please provide your name,email address and phone number.
+          </p>
+          <div class="form">
+            <div class="eachForm">
+              <div class="labelCont">
+                <label>Name</label>
+                <P class="error hidden">This field is required!</P>
+              </div>
+              <input
+                class="inpForm"
+                id="input1"
+                type="text"
+                placeholder="e.g.Stephen King"
+              />
+            </div>
+            <div class="eachForm">
+              <div class="labelCont">
+                <label>Email Address</label>
+                <P class="error hidden">This field is required!</P>
+              </div>
+              <input
+                class="inpForm"
+                id="input2"
+                type="text"
+                placeholder="e.g.stephenking@lorem.com"
+              />
+            </div>
+            <div class="eachForm">
+              <div class="labelCont">
+                <label>Phone Number</label>
+                <P class="error hidden">This field is required!</P>
+              </div>
+              <input
+                class="inpForm"
+                id="input3"
+                type="text"
+                placeholder="e.g.+123 456 789"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="info2 hidden">
+          <h2 class="infoTitle">Select your plan</h2>
+          <p class="infoDesc">
+            You have the option of monthly or yearly billing.
+          </p>
+          <div class="optionCont">
+            <div class="left">
+              <div class="leftDetail">
+                <h5>Arcade</h5>
+                <h6>59/mo</h6>
+              </div>
+            </div>
+            <div class="middle">
+              <div class="middleDetail">
+                <h5>Advanced</h5>
+                <h6>512/mo</h6>
+              </div>
+            </div>
+            <div class="right">
+              <div class="rightDetail">
+                <h5>Pro</h5>
+                <h6>515/mo</h6>
+              </div>
+            </div>
+          </div>
+
+          <div class="modeCont">
+            <p id="p1">Monthly</p>
+            <button class="modeBtn"><span></span></button>
+            <p id="p2">Yearly</p>
+          </div>
+        </div>
+
+        <div class="info3 hidden">
+          <h2 class="infoTitle">Pick add-ons</h2>
+          <p class="infoDesc">Add-ons help enhance your gaming experience.</p>
+          <div class="addOnsCont">
+            <div class="top">
+              <span><button class="tick"></button></span>
+              <div class="leftPart">
+                <h5 class="mainPoint">Online service</h5>
+                <h6 class="subPoint">Access to multiplayer games</h6>
+              </div>
+              <div id="topPrice" class="rightPart">
+                <h6 class="price">+51/mo</h6>
+              </div>
+            </div>
+
+              <div class="top">
+                <span><button class="tick"></button></span>
+                <div class="leftPart">
+                  <h5 class="mainPoint">Larger storage</h5>
+                  <h6 class="subPoint">Extra 1TB of cloud save</h6>
+                </div>
+                <div id="centerPrice" class="rightPart">
+                  <h6  class="price">+52/mo</h6>
+                </div>
+              </div>
+
+                <div class="top">
+                  <span><button class="tick"></button></span><div class="leftPart">
+                    <h5 class="mainPoint">Customizable profit</h5>
+                  <h6 class="subPoint">Custom theme on your profile</h6>
+                  </div>
+                  <div id="bottomPrice"class="rightPart">
+                    <h6 class="price">+52/mo</h6>
+                  </div> 
+              </div>
+            </div>
+          </div>
+
+            <div class="info4 hidden">
+              <h2 class="infoTitle">Finishing up</h2>
+              <p class="infoDesc">Double check everything looks ok before confirming.</p>
+              <div class="summaryCont">
+                <div class="summaryDet">
+                  <div class="leftSide">
+                    <h6 class="summaryDesc">Arcade(Monthly)</h6>
+                    <button class="changeBtn">Change</button>
+                  </div>
+                  <div class="rightSide">
+                    <h6 class="summaryPrice">$9/mo</h6>
+                  </div>
+                </div>
+                <div class="summaryOther">
+                  <div class="leftOth"><h6 class="otherDesc">online service</h6></div>
+                  <div class="rightOth"><h6 class="otherPrice">+51/mo</h6></div>
+                </div>
+                 
+                <div class="summaryOther">
+                  <div class="leftOth"><h6 class="otherDesc">Larger storage</h6></div>
+                  <div class="rightOth"><h6 class="otherPrice">+52/mo</h6></div>
+                </div>
+
+                 <div class="totalCont">
+                  <div class="leftTotal"><h6 class="totalDesc">Total(per Month)</h6>
+                  </div>
+                  <div class="rightTotal"><h6 class="totalPrice">+$12/mo</h6></div>
+                 </div>
+
+              </div>
+            </div>
+
+          <div class="btnCont">
+            <button class="backBtn hidden">Go Back</button>
+            <button class="nextStepBtn">Next Step</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
